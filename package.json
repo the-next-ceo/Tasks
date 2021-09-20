@@ -1,0 +1,108 @@
+{
+	"name": "todo",
+	"description": "TO-DO - Helps to manage the tasks",
+	"version": "0.0.1",
+	"publisher": "vscode-samples",
+	"engines": {
+		"vscode": "^1.50.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onView:vsc_to-do"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/the-next-ceo/To-Do-Extension.git"
+	},
+	"main": "./out/extension.js",
+	"contributes": {
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "vsc_to-do-activitybar-view",
+					"title": "Tasks",
+					"icon": "media/To-do.svg"
+				}
+			]
+		},
+		"views": {
+			"vsc_to-do-activitybar-view": [
+				{
+					"type": "webview",
+					"id": "vsc_to-do",
+					"name": "To-do",
+					"icon": "media/To-do.svg"
+				},
+				{
+					"type": "tree",
+					"id": "list",
+					"name": "Completed"
+				}
+			]
+		},
+		"commands": [
+			{
+				"command": "addTask",
+				"title": "Add Task",
+				"icon": {
+					"dark": "media/add_task_white.svg",
+					"light": "media/add_task_black.svg"
+				}
+			}
+		],
+		"menus": {
+			"view/title": [
+				{
+					"command": "addTask",
+					"group": "navigation",
+					"when": "view == vsc_to-do"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -w -p ./",
+		"lint": "eslint . --ext .ts,.tsx",
+		"watch": "concurrently \"rollup -c -w\" \"tsc -w -p ./\""
+	},
+	"dependencies": {
+		"@rollup/plugin-commonjs": "^19.0.0",
+		"@rollup/plugin-node-resolve": "^13.0.0",
+		"@rollup/plugin-typescript": "^8.2.5",
+		"fs": "^0.0.1-security",
+		"node": "^16.6.1",
+		"rollup-plugin-livereload": "^2.0.5",
+		"rollup-plugin-svelte": "^7.1.0",
+		"rollup-plugin-terser": "^7.0.2",
+		"serve": "^12.0.0",
+		"sirv-cli": "^1.0.14",
+		"svelte": "^3.38.2",
+		"ts-loader": "^9.2.5",
+		"vscode": "^0.9.9",
+		"vscode-test": "^1.6.1"
+	},
+	"devDependencies": {
+		"@tsconfig/svelte": "^2.0.1",
+		"@types/glob": "^7.1.4",
+		"@types/mocha": "^9.0.0",
+		"@types/node": "^16.9.1",
+		"@types/vscode": "^1.60.0",
+		"@typescript-eslint/eslint-plugin": "^4.16.0",
+		"@typescript-eslint/parser": "^4.16.0",
+		"concurrently": "^6.2.1",
+		"eslint": "^7.21.0",
+		"glob": "^7.1.7",
+		"mocha": "^9.1.0",
+		"rollup": "^2.56.3",
+		"rollup-plugin-css-only": "^3.1.0",
+		"rollup-plugin-typescript2": "^0.30.0",
+		"svelte-check": "^2.2.5",
+		"svelte-preprocess": "^4.7.4",
+		"tslib": "^2.3.1",
+		
+		"typescript": "^4.4.2"
+	}
+}
