@@ -23,7 +23,7 @@
 				{
 					"id": "vsc_to-do-activitybar-view",
 					"title": "Tasks",
-					"icon": "media/To-do.svg"
+					"icon": "media/To-Do.svg"
 				}
 			]
 		},
@@ -33,7 +33,7 @@
 					"type": "webview",
 					"id": "vsc_to-do",
 					"name": "To-do",
-					"icon": "media/To-do.svg"
+					"icon": "media/To-Do.svg"
 				},
 				{
 					"type": "tree",
@@ -82,7 +82,8 @@
 		"svelte": "^3.42.6",
 		"ts-loader": "^9.2.5",
 		"vscode": "^0.9.9",
-		"vscode-test": "^1.6.1"
+		"vscode-test": "^1.6.1",
+		"webpack": "^5.53.0"
 	},
 	"devDependencies": {
 		"@tsconfig/svelte": "^2.0.1",
