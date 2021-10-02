@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
 import { activityBar } from './activitybar';
-import { completed } from './completed';
+import { completed } from './completebar';
 
 
 export function activate(context: vscode.ExtensionContext) {
@@ -9,7 +9,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const provider2 = new completed(context.extensionUri);
 
 	context.subscriptions.push(
-		
+
 		vscode.window.registerWebviewViewProvider(activityBar.viewType, provider),
 		vscode.window.registerWebviewViewProvider(completed.viewType, provider2));
 

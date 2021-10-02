@@ -1,7 +1,7 @@
 
 /* eslint-disable @typescript-eslint/naming-convention */
 import * as vscode from 'vscode';
-import { getNonce } from '../src/nonce';
+import { getNonce } from './nonce';
 
 
 export class completed implements vscode.WebviewViewProvider {

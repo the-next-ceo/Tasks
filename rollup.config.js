@@ -15,7 +15,7 @@ export default fs
 	.map((input) => {
 		const name = input.split(".")[0];
 		return {
-			input: 'webview/ts_svelte' + input,
+			input: 'webview/ts_svelte/' + input,
 			output: {
 				//sourcemap: false,
 				format: 'iife',
