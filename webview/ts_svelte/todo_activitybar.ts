@@ -1,6 +1,6 @@
 
 import todo from '../todo.svelte';
-import "svelte";
+//import "svelte";
 
 const app = new todo({
   target: document.body,

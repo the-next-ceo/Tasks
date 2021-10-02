@@ -7,7 +7,7 @@
 			"es6",
 			"dom",
 		],
-		//"types": ["svelte"],
+		
 		//"moduleResolution": "node",
 		"sourceMap" : true,
 		"allowSyntheticDefaultImports": true,
@@ -21,10 +21,11 @@
 	"exclude": [
 		"node_modules",
 		".vscode-test",
-		"webview"
+		"webview/svelte"
 	],
 	"include": [
-		"src"
+		"src",
+		
 	],
 	
     

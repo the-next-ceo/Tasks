@@ -36,8 +36,8 @@
 					"icon": "media/To-Do.svg"
 				},
 				{
-					"type": "tree",
-					"id": "list",
+					"type": "webview",
+					"id": "completed",
 					"name": "Completed"
 				}
 			]

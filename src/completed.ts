@@ -1,13 +1,13 @@
 
 /* eslint-disable @typescript-eslint/naming-convention */
 import * as vscode from 'vscode';
-import { getNonce } from './nonce';
+import { getNonce } from '../src/nonce';
 
 
-export class activityBar implements vscode.WebviewViewProvider {
+export class completed implements vscode.WebviewViewProvider {
 
-    public static readonly viewType = 'vsc_to-do';
-    
+    public static readonly viewType = 'completed';
+
     constructor(private readonly _uri: vscode.Uri) { }
 
     public resolveWebviewView(webView: vscode.WebviewView) {
@@ -25,9 +25,9 @@ export class activityBar implements vscode.WebviewViewProvider {
     */
     private getHtmlWebView(webview: vscode.Webview) {
 
-        const scriptUri = webview.asWebviewUri(vscode.Uri.joinPath(this._uri, 'out', 'compiled/todo/bundle.js')
+        const scriptUri = webview.asWebviewUri(vscode.Uri.joinPath(this._uri, 'out', 'compiled/completed/bundle.js')
         );
-        const styleUri = webview.asWebviewUri(vscode.Uri.joinPath(this._uri, 'out', 'compiled/todo/bundle.css')
+        const styleUri = webview.asWebviewUri(vscode.Uri.joinPath(this._uri, 'out', 'compiled/completed/bundle.css')
         );
         const nonce = getNonce();
 
