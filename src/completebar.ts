@@ -25,9 +25,9 @@ export class completed implements vscode.WebviewViewProvider {
     */
     private getHtmlWebView(webview: vscode.Webview) {
 
-        const scriptUri = webview.asWebviewUri(vscode.Uri.joinPath(this._uri, 'out', 'compiled/completed/bundle.js')
+        const scriptUri = webview.asWebviewUri(vscode.Uri.joinPath(this._uri, 'out', 'compiled/complete.js')
         );
-        const styleUri = webview.asWebviewUri(vscode.Uri.joinPath(this._uri, 'out', 'compiled/completed/bundle.css')
+        const styleUri = webview.asWebviewUri(vscode.Uri.joinPath(this._uri, 'out', 'compiled/complete.css')
         );
         const nonce = getNonce();
 

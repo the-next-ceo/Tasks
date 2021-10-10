@@ -2,8 +2,8 @@
 import "svelte";
 import complete from '../svelte/complete.svelte'
 
-const app = new complete({
+const comp = new complete({
   target: document.body,
 });
 
-export default app;
+export default comp;

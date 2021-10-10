@@ -25,9 +25,9 @@ export class activityBar implements vscode.WebviewViewProvider {
     */
     private getHtmlWebView(webview: vscode.Webview) {
 
-        const scriptUri = webview.asWebviewUri(vscode.Uri.joinPath(this._uri, 'out', 'compiled/todo/bundle.js')
+        const scriptUri = webview.asWebviewUri(vscode.Uri.joinPath(this._uri, 'out', 'compiled/todo_activitybar.js')
         );
-        const styleUri = webview.asWebviewUri(vscode.Uri.joinPath(this._uri, 'out', 'compiled/todo/bundle.css')
+        const styleUri = webview.asWebviewUri(vscode.Uri.joinPath(this._uri, 'out', 'compiled/todo_activitybar.css')
         );
         const nonce = getNonce();
 
