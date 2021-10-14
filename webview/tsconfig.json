@@ -10,5 +10,6 @@
         "strict": true,
     //"types": ["node", "svelte"],
     //"types": ["svelte", "node"  ],
-    }
+    },
+    "useUnknownInCatchVariables": false,
 }

@@ -9,6 +9,8 @@ import typescript from 'rollup-plugin-typescript2';
 import css from 'rollup-plugin-css-only';
 
 
+
+
 const production = !process.env.ROLLUP_WATCH;
 
 export default fs
@@ -23,6 +25,7 @@ export default fs
 				name: 'app',
 				file: 'out/compiled/' + name + ".js",
 			},
+			parser: '@typescript-eslint/parser',
 			plugins: [
 				svelte({
 
@@ -61,6 +64,8 @@ export default fs
 					inlineSources: !production,
 					//rootDir: './src',
 				}),
+				
+
 				// In dev mode, call `npm run start` once
 				// the bundle has been generated
 				//!production && serve(),

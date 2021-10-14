@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 import { readFileSync, writeFileSync } from "fs";
 import { appendFileSync } from 'fs';
-import * as vscode from 'vscode';
+
 
 export class To_Do {
     i:number = 0;
@@ -58,9 +58,7 @@ export class To_Do {
         } */
     }
 
-    dis(){
-        return "hello world";
-    }
+   
     // var a = "this is called testing";
     // var b = "hello world";
     // var c = "fello world";
