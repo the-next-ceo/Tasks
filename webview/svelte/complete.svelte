@@ -1,7 +1,7 @@
 <script>
 	import Todo from "./todo.svelte";
 	let word;
-
+// check out for the out directory
 	//let index = "hello world";
 	//export let a = word.addToList;
 </script>
@@ -12,4 +12,4 @@
 
 <body>
 	<!-- {word.hello} -->
-</body>
+</body>~

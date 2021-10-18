@@ -72,6 +72,7 @@
 		"@rollup/plugin-commonjs": "^19.0.0",
 		"@rollup/plugin-node-resolve": "^13.0.0",
 		"@rollup/plugin-typescript": "^8.2.5",
+		"acorn-import-assertions": "^1.7.6",
 		"fs": "^0.0.1-security",
 		"node": "^16.9.1",
 		"rollup-plugin-livereload": "^2.0.5",
@@ -83,7 +84,7 @@
 		"ts-loader": "^9.2.5",
 		"vscode": "^0.9.9",
 		"vscode-test": "^1.6.1",
-		"webpack": "^5.53.0"
+		"webpack": "^5.58.2"
 	},
 	"devDependencies": {
 		"@tsconfig/svelte": "^2.0.1",
@@ -96,13 +97,13 @@
 		"concurrently": "^6.2.1",
 		"eslint": "^7.21.0",
 		"glob": "^7.1.7",
-		"mocha": "^9.1.1",
+		"mocha": "^9.1.3",
 		"rollup": "^2.56.3",
 		"rollup-plugin-css-only": "^3.1.0",
 		"rollup-plugin-typescript2": "^0.30.0",
 		"svelte-check": "^2.2.6",
 		"svelte-preprocess": "^4.9.5",
 		"tslib": "^2.3.1",
-		"typescript": "^4.4.3"
+		"typescript": "^4.4.4"
 	}
 }
